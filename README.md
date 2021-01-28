@@ -1,5 +1,5 @@
 # sito
-Ragazzi qui sotto trovate il link con il google documet per le istruzioni del progetto
+Ragazzi qui sotto trovate il link con il google document per le istruzioni del progetto
 buon lavoro
 
 G&G Capital
