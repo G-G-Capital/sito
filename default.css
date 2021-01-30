@@ -566,3 +566,31 @@
 	.mySlides {
 		display:none;
 	}
+	/*********************************************/
+	/*CSS OBIETTIVI
+	/*********************************************/
+	.boxOA,
+	.boxOB,
+	.boxOC
+	{
+		width: 384px;
+	}
+
+	.boxOA,
+	.boxOB
+	{
+		float: left;
+		margin-right: 20px;
+	}
+	
+	.boxOC
+	{
+		float: right;
+	}
+	
+	.boxOA img:hover,
+	.boxOB img:hover,
+	.boxOC img:hover
+	{
+		width: 200px; height:200px;
+	}
