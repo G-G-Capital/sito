@@ -20,12 +20,14 @@ document.addEventListener("DOMContentLoaded", function() {
    }
    function fieldValidation(field, validationFunction) {
     if (field == null) return false;
+
     let isFieldValid = validationFunction(field.value)
     if (!isFieldValid) {
-    field.className = 'placeholderRed';
+        field.className = 'placeholderRed';
     } else {
-    field.className = '';
+        field.className = '';
     }
+
     return isFieldValid;
    }
    function isValid() {
@@ -36,7 +38,6 @@ document.addEventListener("DOMContentLoaded", function() {
     valid &= fieldValidation(fields.country, isNotEmpty);
     valid &= fieldValidation(fields.email, isEmail);
     valid &= fieldValidation(fields.question, isNotEmpty);
-    valid &= arePasswordsEqual();
     return valid;
    }
    class User {
@@ -51,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function() {
    }
    function invia() {
     if (isValid()) {
-    let usr = new User(firstName.value, lastName.value, address.value, country.value, email.value);
+    let usr = new User(nome.value, cognome.value, indirizzo.value, nazione.value, email.value);
    
     alert(`${usr.firstName} La tua domanda è stata inviata correttamente`)
    

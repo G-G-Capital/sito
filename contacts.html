@@ -20,6 +20,7 @@ Released   : 20140330
 <link href="default.css" rel="stylesheet" type="text/css" media="all" />
 <link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
 <script type="text/javascript" src="js/form.js"></script>
+<script type="text/javascript" src="js/maps.js"></script>
 </head>
 <body>
 <div id="header-wrapper">
@@ -32,7 +33,7 @@ Released   : 20140330
 				<li><a href="index.html" accesskey="1" title="">Home</a></li>
 				<li><a href="about.html" accesskey="2" title="">Chi siamo</a></li>
 				<li><a href="departments.html" accesskey="3" title="">Settori</a></li>
-				<li><a href="????.html" accesskey="4" title="">????</a></li>
+				<li><a href="targets.html" accesskey="4" title="">obbiettivi</a></li>
 				<li class="active"><a href="#" accesskey="5" title="">Contatti</a></li>
 			</ul>
 		</div>
@@ -43,16 +44,16 @@ Released   : 20140330
 		<div class="title">
 			<h2>Hai bisogno di più informazioni?</h2>
 		</div>
-		<form onsubmit="return false" >
+		<form onsubmit="return false" class="form">
 			<div class="title">
-				<span class="byline">Compila il modulo qua sotto per essere ricontatto</span>
+				<span class="byline"><b>Compila il modulo qua sotto per essere ricontatto</b></span>
 			</div>
-			Nome: <input type="text" placeholder="inserisci il tuo nome" id="nome" />
-			Cognome :<input type="text" placeholder="inserisci il tuo cognome" id="cognome" />
+			<strong>Nome:</strong> <input type="text" placeholder="inserisci il tuo nome" id="nome" />
+			<strong>Cognome:</strong><input type="text" placeholder="inserisci il tuo cognome" id="cognome" />
 			<br><br>
-			Email: <input type="email" placeholder="inserisci la tua email" id="email" />
+			<strong>Email:</strong><input type="email" placeholder="inserisci la tua email" id="email" />
 			<br><br>
-			Indirizzo: <input type="text" placeholder="inserisci il tuo indirizzo" id="indirizzo" />
+			<strong>Indirizzo:</strong><input type="text" placeholder="inserisci il tuo indirizzo" id="indirizzo" />
 			<select id="nazione">
 				<option disabled selected value>seleziona la tua nazione</option>
 				<option value="US">United States</option>
@@ -160,7 +161,7 @@ Released   : 20140330
 				<option value="IQ">Iraq</option>
 				<option value="IE">Ireland</option>
 				<option value="IL">Israel</option>
-				<option value="IT"selected="selected">Italy</option>
+				<option value="IT">Italy</option>
 				<option value="CI">Cote D&rsquo;Ivoire</option>
 				<option value="JM">Jamaica</option>
 				<option value="JP">Japan</option>
@@ -298,23 +299,25 @@ Released   : 20140330
 				<option value="ZW">Zimbabwe</option>
 			</select>
 		<br><br>
-		<span>Cosa vorresti sapere?</span>
+		<span><strong>Cosa vorresti sapere?</strong></span>
 		<br>
-		<textarea id="domanda" rows="5" cols="50"></textarea>
+		<textarea id="domanda" rows="10" cols="100"></textarea>
 		<br><br>
-		<button onclick="invia();">invia</button>
+		<button class="button-alt" onclick="invia();" style="border: 0;, border-radius: 6px;">invia</button>
 		</form>
-		<div class="title">
-			<span class="byline">Oppure scrivi su uno dei nostri profili instagram</span>
-		</div>
 	</div>
 </div>
 <div id="welcome">
-	<div class="container">
-		
+	<div id="where">
+		<h2 style="padding-bottom: 50px;">Dove siamo?</h2>
+		<div id="maps">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2813.78278935392!2d10.000917016232332!3d45.15099626230732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4780fde50502ddcd%3A0xdb567c2dab3bb21c!2sIIS%20Janello%20Torriani!5e0!3m2!1sit!2sit!4v1612031330774!5m2!1sit!2sit" width="1200" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+		</div>
+	</div>
 </div>
 <div id="copyright" class="container">
 	<p>&copy; G&G Capital. Tutti i diritti sono riservati. | P.IVA 12345678901 | Realizzato da <a href="mailto:infosite@ggcapital.com" rel="nofollow">G&G Capital</a>.</p>
 </div>
 </body>
 </html>
+
