@@ -213,7 +213,7 @@
 	
 	.box1,
 	.box2,
-	.box3,
+	.box3
 	{
 		float: left;
 		margin-right: 20px;
@@ -366,6 +366,8 @@
 		display: block;
 		float: left;
 		text-align: center;
+		padding-left: 1px;
+		padding-right: 1px;
 	}
 	
 	#menu li a, #menu li span
@@ -376,6 +378,12 @@
 		text-transform: uppercase;
 		font-size: 0.8em;
 		color: rgba(255,255,255,0.80);
+	}
+
+	#menu li a{
+		background: #88b0ff8c;
+		border-radius: 6px;
+		color: rgba(255,255,255,1);
 	}
 	
 	#menu li:hover a 
@@ -566,3 +574,20 @@
 	.mySlides {
 		display:none;
 	}
+	.form{
+		font-size: 1.5em;
+		color: rgba(0,0,0,0.8);
+	}
+	.form input,
+	.form textarea,
+	.form select
+	{
+		border-color: #2DAAE4;
+	}
+	.form input,
+	.form select
+	{
+		height: 25px;
+	}
+
+	
