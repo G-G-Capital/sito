@@ -601,6 +601,35 @@
 	.mySlides {
 		display:none;
 	}
+	/*********************************************/
+	/*CSS OBIETTIVI
+	/*********************************************/
+	.boxOA,
+	.boxOB,
+	.boxOC
+	{
+		width: 384px;
+	}
+
+	.boxOA,
+	.boxOB
+	{
+		float: left;
+		margin-right: 20px;
+	}
+	
+	.boxOC
+	{
+		float: right;
+	}
+	
+	.boxOA img:hover,
+	.boxOB img:hover,
+	.boxOC img:hover
+	{
+		width: 200px; height:200px;
+	}
+	}
 	.form{
 		font-size: 1.5em;
 		color: rgba(0,0,0,0.8);
@@ -617,4 +646,5 @@
 		height: 25px;
 	}
 
+	
 	
