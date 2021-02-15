@@ -646,5 +646,23 @@
 		height: 25px;
 	}
 
-	
-	
+
+
+	/*************/
+	/*lingue
+	/*************/
+	#language{ 
+		position: absolute;
+		top: 1.2em;
+		right: 0;
+	}
+	#language button{
+		background-color: Transparent;
+		border: none;
+	}
+	#language .active{
+		background: #457be7;
+		border-radius: 6px;
+		color: rgba(255,255,255,1);
+		border: 0px;
+	}
